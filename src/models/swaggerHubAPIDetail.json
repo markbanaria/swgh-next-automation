@@ -1,0 +1,604 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "version": "1.0.0",
+        "title": "Prudential Symphony Document API",
+        "termsOfService": "https://symphony.prudential.com/terms/",
+        "contact": {
+            "email": "platform@prudentialplc.com",
+            "url": "https://www.prudentialplc.com/en"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "x-logo": {
+            "url": "https://www.prudentialplc.com/~/media/Images/P/Prudential-V13/logo/updated-logo.png?h=56&iar=0&w=236"
+        },
+        "description": "These are the API specifications for symphony service domains.\n"
+    },
+    "servers": [
+        {
+            "url": "https://api.symphony.prudentialplc.com/api"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Document",
+            "description": "APIs for Document Domain services. Document domain API service endpoints for managing and accessing various types of documents related to their policies, claims, and customer information. This API provides secure and reliable access to documents such as policy agreements, claim forms, customer correspondence, and other important records.\n"
+        }
+    ],
+    "paths": {
+        "/v1/documents/search": {
+            "post": {
+                "tags": [
+                    "Document"
+                ],
+                "summary": "Search Documents by Criteria",
+                "description": "Search Documents by Criteria\n",
+                "operationId": "searchDocumentsByCriteria",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/Tenant_PACS_PLUK_PLAI"
+                    },
+                    {
+                        "$ref": "#/components/parameters/Limit"
+                    },
+                    {
+                        "$ref": "#/components/parameters/Offset"
+                    },
+                    {
+                        "$ref": "#/components/parameters/SortBy"
+                    },
+                    {
+                        "$ref": "#/components/parameters/SortOrder"
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/DocumentsSearchRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/DocumentsSummaryResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$ref": "#/components/responses/BadRequest"
+                    }
+                }
+            }
+        },
+        "/v1/documents/{id}": {
+            "get": {
+                "tags": [
+                    "Document"
+                ],
+                "summary": "Get Document by Id",
+                "description": "Get Document by Id.\n",
+                "operationId": "getDocumentById",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/Tenant_PACS_PLUK_PLAI"
+                    },
+                    {
+                        "$ref": "#/components/parameters/Id"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Document"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$ref": "#/components/responses/BadRequest"
+                    }
+                }
+            }
+        },
+        "/v1/medical/cards/search": {
+            "post": {
+                "tags": [
+                    "Document"
+                ],
+                "summary": "Search Medical Cards by criteria",
+                "description": "Search Medical Cards by criteria.\n",
+                "operationId": "searchMedicalCardsByCriteria",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/Tenant_PACS"
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/MedicalCardsSearchRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/MedicalCard"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "$ref": "#/components/responses/BadRequest"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "parameters": {
+            "Tenant_PACS_PLUK_PLAI": {
+                "in": "header",
+                "name": "X-PRU-TENANT",
+                "description": "The Prudential LBU Id",
+                "required": true,
+                "schema": {
+                    "type": "string",
+                    "enum": [
+                        "PACS",
+                        "PLUK",
+                        "PLAI"
+                    ]
+                }
+            },
+            "Limit": {
+                "in": "query",
+                "name": "limit",
+                "description": "The number of items to return",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "default": 10
+                }
+            },
+            "Offset": {
+                "in": "query",
+                "name": "offset",
+                "description": "The number of items to skip before starting to collect the result set",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "default": 0
+                }
+            },
+            "SortBy": {
+                "in": "query",
+                "name": "sort_by",
+                "description": "sort by property",
+                "required": false,
+                "schema": {
+                    "type": "string",
+                    "default": "id"
+                }
+            },
+            "SortOrder": {
+                "in": "query",
+                "name": "sort_order",
+                "description": "sort records by ascending or descending",
+                "required": false,
+                "schema": {
+                    "type": "string",
+                    "enum": [
+                        "asc",
+                        "desc"
+                    ],
+                    "default": "desc"
+                }
+            },
+            "Id": {
+                "in": "path",
+                "name": "id",
+                "description": "Id",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "Tenant_PACS": {
+                "in": "header",
+                "name": "X-PRU-TENANT",
+                "description": "The Prudential LBU Id",
+                "required": true,
+                "schema": {
+                    "type": "string",
+                    "enum": [
+                        "PACS"
+                    ],
+                    "default": "PACS"
+                }
+            }
+        },
+        "schemas": {
+            "DocumentCategoryEnum": {
+                "type": "string",
+                "nullable": false,
+                "description": "Category Group of the document - Policy Letters, statements and notices, Product Static Document",
+                "enum": [
+                    "POLICY_LETTERS",
+                    "BOOKLETS",
+                    "PRODUCT",
+                    "ANNUAL_PREMIUM_SUMMARY",
+                    "POLICY_DOCUMENT_CLAIM"
+                ]
+            },
+            "DocumentSubCategoryEnum": {
+                "type": "string",
+                "description": "Sub Category of the document - contracts, statements and notices, booklets and annexures, annual premium summary",
+                "enum": [
+                    "CONTRACTS",
+                    "OTHERS",
+                    "STATEMENTS_AND_NOTICES",
+                    "BOOKLETS",
+                    "ANNUAL_PREMIUM_SUMMARY",
+                    "BENEFITS",
+                    "FUNDS",
+                    "ANNEXURE",
+                    "PREMIUM_TABLE",
+                    "UNKNOWN",
+                    "POLICY_DOCUMENT_CLAIM.APPROVED",
+                    "POLICY_DOCUMENT_CLAIM.CASE.CLOSED",
+                    "POLICY_DOCUMENT_CLAIM.PENDING"
+                ],
+                "x-enum-varnames": [
+                    "CONTRACTS",
+                    "OTHERS",
+                    "STATEMENTS_AND_NOTICES",
+                    "BOOKLETS",
+                    "ANNUAL_PREMIUM_SUMMARY",
+                    "BENEFITS",
+                    "FUNDS",
+                    "ANNEXURE",
+                    "PREMIUM_TABLE",
+                    "UNKNOWN",
+                    "POLICY_DOCUMENT_CLAIM_APPROVED",
+                    "POLICY_DOCUMENT_CLAIM_CASE_CLOSED",
+                    "POLICY_DOCUMENT_CLAIM_PENDING"
+                ]
+            },
+            "DocumentSearchCriteria": {
+                "type": "object",
+                "required": [
+                    "category"
+                ],
+                "properties": {
+                    "policyId": {
+                        "type": "string",
+                        "description": "Policy Number",
+                        "nullable": true
+                    },
+                    "partyId": {
+                        "type": "string",
+                        "description": "Party identifier (customer Id)",
+                        "nullable": true
+                    },
+                    "claimId": {
+                        "type": "string",
+                        "description": "Claim Number",
+                        "nullable": true
+                    },
+                    "claimEventId": {
+                        "type": "string",
+                        "description": "Claim Event Number",
+                        "nullable": true
+                    },
+                    "category": {
+                        "$ref": "#/components/schemas/DocumentCategoryEnum"
+                    },
+                    "subCategories": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DocumentSubCategoryEnum"
+                        },
+                        "description": "Sub Category of the document"
+                    },
+                    "fromDate": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Document created from (Inclusive)",
+                        "nullable": true
+                    },
+                    "toDate": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Document created to (Inclusive)",
+                        "nullable": true
+                    },
+                    "productCode": {
+                        "type": "string",
+                        "description": "Product Code",
+                        "nullable": true
+                    }
+                }
+            },
+            "DocumentSummary": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "contentType",
+                    "docGenDate",
+                    "category"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "unique identifier of the document",
+                        "nullable": false
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Document Name",
+                        "nullable": false
+                    },
+                    "policyId": {
+                        "type": "string",
+                        "description": "Policy Id",
+                        "nullable": true
+                    },
+                    "contentType": {
+                        "type": "string",
+                        "description": "MIME type of the document - IETF`s RFC 6838",
+                        "nullable": false
+                    },
+                    "docGenDate": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Document Uploaded/Generated/Scanning date",
+                        "nullable": false
+                    },
+                    "category": {
+                        "$ref": "#/components/schemas/DocumentCategoryEnum"
+                    },
+                    "subCategory": {
+                        "$ref": "#/components/schemas/DocumentSubCategoryEnum"
+                    },
+                    "fileSize": {
+                        "type": "number",
+                        "format": "float",
+                        "description": "Size of the document in Mega bytes",
+                        "default": 0,
+                        "nullable": true
+                    },
+                    "read": {
+                        "type": "boolean",
+                        "description": "Flag to indicate if the document is read",
+                        "default": false,
+                        "nullable": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "URL of the document",
+                        "nullable": true
+                    }
+                }
+            },
+            "PaginationResponse": {
+                "type": "object",
+                "properties": {
+                    "currentPage": {
+                        "type": "integer",
+                        "description": "current page count. a.k.a offset",
+                        "example": 1
+                    },
+                    "totalItems": {
+                        "type": "integer",
+                        "description": "Total number of items",
+                        "example": 100
+                    }
+                }
+            },
+            "DocumentsSummaryResponse": {
+                "type": "object",
+                "properties": {
+                    "body": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/DocumentSummary"
+                        }
+                    },
+                    "pagination": {
+                        "$ref": "#/components/schemas/PaginationResponse"
+                    }
+                }
+            },
+            "ProblemDetail": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "status"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "A URI reference that identifies the problem type."
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "A short, human-readable summary of the problem type."
+                    },
+                    "status": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "The HTTP status code for this occurrence of the problem."
+                    },
+                    "detail": {
+                        "type": "string",
+                        "description": "A human-readable explanation specific to this occurrence of the problem."
+                    },
+                    "instance": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "A URI reference that identifies the specific occurrence of the problem."
+                    },
+                    "properties": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "nullable": true
+                    }
+                }
+            },
+            "Document": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "contentType",
+                    "content"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "unique identifier of the document",
+                        "nullable": false
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Document Name",
+                        "nullable": false
+                    },
+                    "contentType": {
+                        "type": "string",
+                        "description": "MIME type of the document - IETF`s RFC 6838",
+                        "nullable": false
+                    },
+                    "content": {
+                        "type": "string",
+                        "description": "Base 64 string in case of embedded content",
+                        "format": "base64",
+                        "nullable": false
+                    }
+                }
+            },
+            "MedicalCardSearchCriteria": {
+                "type": "object",
+                "properties": {
+                    "policyId": {
+                        "type": "string",
+                        "description": "Policy Id",
+                        "nullable": true
+                    },
+                    "clientId": {
+                        "type": "string",
+                        "description": "Client Id",
+                        "nullable": true
+                    }
+                }
+            },
+            "MedicalCard": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "policyNo",
+                    "partyId"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Unique identifier of the system",
+                        "nullable": false
+                    },
+                    "partyId": {
+                        "type": "string",
+                        "description": "Party Id",
+                        "nullable": false
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the Life Assured",
+                        "nullable": true
+                    },
+                    "policyNo": {
+                        "type": "string",
+                        "description": "Policy number",
+                        "nullable": true
+                    },
+                    "planName": {
+                        "type": "string",
+                        "description": "Policy name",
+                        "nullable": true
+                    },
+                    "validity": {
+                        "type": "string",
+                        "description": "Card valid till",
+                        "format": "date",
+                        "nullable": true
+                    },
+                    "generatedOn": {
+                        "type": "string",
+                        "description": "Card generated date",
+                        "format": "date",
+                        "nullable": true,
+                        "example": "2021-01-01"
+                    },
+                    "contentType": {
+                        "type": "string",
+                        "description": "MIME type of the document - IETF`s RFC 6838",
+                        "nullable": true
+                    },
+                    "content": {
+                        "type": "string",
+                        "description": "Base 64 string in case of embedded content",
+                        "format": "base64",
+                        "nullable": true
+                    }
+                }
+            }
+        },
+        "requestBodies": {
+            "DocumentsSearchRequest": {
+                "description": "Search Documents By Criteria",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/DocumentSearchCriteria"
+                        }
+                    }
+                }
+            },
+            "MedicalCardsSearchRequest": {
+                "description": "Search Medical Cards by criteria.",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/MedicalCardSearchCriteria"
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "BadRequest": {
+                "description": "Bad Request",
+                "content": {
+                    "application/problem+json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ProblemDetail"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

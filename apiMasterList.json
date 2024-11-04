@@ -1,0 +1,1992 @@
+[
+  {
+    "entity": "PruServices Experience Layer API",
+    "paths": [
+      {
+        "name": "/",
+        "domain": "Unknown",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony Agent API",
+    "paths": [
+      {
+        "name": "/v1/agents/{id}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/agents",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony Claim API",
+    "paths": [
+      {
+        "name": "/v1/claims/search",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events/{eventId}",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony Document API",
+    "paths": [
+      {
+        "name": "/v1/documents/search",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/documents/{id}",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/medical/cards/search",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential PACS API",
+    "paths": [
+      {
+        "name": "/v1/policy/{id}/premiumRedirection",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/portfolioRebalance",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/partialWithdrawal",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/fundSwitch",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/transactions",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/search",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/search",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/search/download",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/documents/search",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/document/upload",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/updateUsername",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/triggerOTP",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/rpq/assessment",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/lookup",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/cka/assessment",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/{type}/availableFunds",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/premiums",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/payouts",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/payoutMethods",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/medicalCard",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/holdings",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/financials",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/allocations",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/{id}/actions",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policy/transaction/{id}/detail",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payment/banks",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/document/{id}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{policyId}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/{id}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/{id}/risk",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/{id}/medicalCard",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/{id}/funds",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/{id}/cka",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/{id}/availablePayouts",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/risk/questions",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/client/cka/questions",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/agents/{policyId}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/agent/{id}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/actuator/info",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/actuator/health",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential PAMB API",
+    "paths": [
+      {
+        "name": "/parties",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/parties/policies/{policyId}",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/agents",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/agents/policies/{policyId}",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/search",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{policyId}/holdings",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{policyId}/financials",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/documents/search",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/documents/{id}",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/{policyId}/frequency",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/{policyId}/changefrequency",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/{policyId}/paymentDetail",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/{policyId}/premiumDue",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/{policyId}/premium",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/search",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony Party API",
+    "paths": [
+      {
+        "name": "/v1/clients/identity",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/parties",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}/cka",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/cka/assessment",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/cka/questions",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}/risk",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/risk/assessment",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/risk/questions",
+        "domain": "Party",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony Payment API",
+    "paths": [
+      {
+        "name": "/v1/payments/search",
+        "domain": "Payment",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/confirmation",
+        "domain": "Payment",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments",
+        "domain": "Payment",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential PLAI/PSLA API",
+    "paths": [
+      {
+        "name": "/v1/claims/search",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events/{eventId}",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events/{eventId}/documents",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/parties/{policyId}",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/search",
+        "domain": "Claim",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential PLUK APIs",
+    "paths": [
+      {
+        "name": "/documents/{id}",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/parties",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/search",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments/confirmation",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/payments",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/search",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}/frequency/options",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}/frequency",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}/premium",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}/premium/options",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/transaction-references/generate",
+        "domain": "Document",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony Policy API",
+    "paths": [
+      {
+        "name": "/v1/policies/search",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/actions",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/frequency/options",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/frequency",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium/options",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/financials",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/holdings",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/allocations",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/payouts",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/payout-methods",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/holdings/switch",
+        "domain": "Policy",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential PVA API",
+    "paths": [
+      {
+        "name": "/agents",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/parties",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/search",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/policies/{id}",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/financials",
+        "domain": "Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony API",
+    "paths": [
+      {
+        "name": "/v1/agents/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/agents",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events/{eventId}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/documents/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/documents/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/medical/cards/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/policy/{policyId}/available",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/client/{clientId}/holdings",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/{code}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/{code}/history",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/identity",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/parties",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}/cka",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/cka/assessment",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/cka/questions",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}/risk",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/risk/assessment",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/risk/questions",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/confirmation",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/actions",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/frequency/options",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/frequency",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium/options",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/financials",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/holdings",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/allocations",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/payouts",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/payout-methods",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/holdings/switch",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  },
+  {
+    "entity": "Prudential Symphony API (DRAFT)",
+    "paths": [
+      {
+        "name": "/v1/agents/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/agents",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/claims/{id}/events",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/cliamnts/{id}/events/{eventId}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/documents/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/documents/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/medical/cards/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/policy/{policyId}/available",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/client/{clientId}/holdings",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/{code}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/funds/{code}/history",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/identity",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/parties",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}/cka",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/cka/questions",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/{id}/risk",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/clients/risk/questions",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments/confirmation",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/payments",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/search",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/actions",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/frequency/options",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/frequency",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/premium/options",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/financials",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/holdings",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/allocations",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/payouts",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/payout-methods",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      },
+      {
+        "name": "/v1/policies/{id}/holdings/switch",
+        "domain": "agency_Agent",
+        "stages": {
+          "ContractAvailable": true,
+          "ProxyDefined": false,
+          "SymphonyToProxyTestPassed": false,
+          "ProxyToLocalTestPassed": false
+        }
+      }
+    ]
+  }
+]

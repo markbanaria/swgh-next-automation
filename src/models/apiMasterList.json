@@ -1,0 +1,32 @@
+[
+    {
+        "entity": "Symphony",
+        "paths": [
+            {
+                "name": "/v1/agents/{id}",
+                "domain": "Agent",
+                "stages": {
+                    "ContractAvailable": true,
+                    "ProxyDefined": false,
+                    "SymphonyToProxyTestPassed": false,
+                    "ProxyToLocalTestPassed": false
+                }                    
+            }
+        ]
+    },
+    {
+        "entity": "PACS",
+        "paths": [
+            {
+                "name": "/v1/agents/{id}",
+                "domain": "Agent",
+                "stages": {
+                    "ContractAvailable": true,
+                    "ProxyDefined": false,
+                    "SymphonyToProxyTestPassed": false,
+                    "ProxyToLocalTestPassed": false
+                }                    
+            }
+        ]
+    }
+]

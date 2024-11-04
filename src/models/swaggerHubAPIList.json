@@ -1,0 +1,489 @@
+{
+    "name": "Default listing",
+    "description": "Default registry listing",
+    "url": "apis/PrudentialSymphony",
+    "offset": 0,
+    "totalCount": 14,
+    "apis": [
+        {
+            "name": "PruServices Experience Layer API",
+            "description": "The PruServices Experience Layer API description",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/experience-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-24T07:28:38Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-10-30T04:36:15Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.0"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.0"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential Symphony Agent API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-agent-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-26T03:57:03Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-11-04T02:48:20Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential Symphony Claim API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-claim-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-10-09T07:43:53Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-11-04T02:48:23Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential Symphony Document API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-document-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-26T04:00:15Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-11-04T02:48:17Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential PACS API",
+            "description": "API specifications for Pru Services",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-pacs-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-22T07:14:20Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-10-30T04:50:48Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0,-v1.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.1"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.1"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential PAMB API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-pamb-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-22T07:18:52Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-05-30T02:03:40Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential Symphony Party API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-party-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-26T04:03:41Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-11-04T02:48:08Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential Symphony Payment API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-payment-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-26T04:15:48Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-11-04T02:48:11Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential PLAI/PSLA API",
+            "description": "These are the API specifications for symphony service domains.",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-plai-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-10-12T06:28:44Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-11-04T01:25:42Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "Prudential PLUK APIs",
+            "description": "Prudential PLUK Domain APIs",
+            "summary": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "Swagger",
+                    "url": "https://api.swaggerhub.com/apis/PrudentialSymphony/prudential-symphony-pluk-api/1.0.0"
+                },
+                {
+                    "type": "X-Version",
+                    "value": "1.0.0"
+                },
+                {
+                    "type": "X-Created",
+                    "value": "2024-04-23T07:52:24Z"
+                },
+                {
+                    "type": "X-Modified",
+                    "value": "2024-07-04T04:32:34Z"
+                },
+                {
+                    "type": "X-Published",
+                    "value": "false"
+                },
+                {
+                    "type": "X-Versions",
+                    "value": "-1.0.0"
+                },
+                {
+                    "type": "X-Private",
+                    "value": "true"
+                },
+                {
+                    "type": "X-OASVersion",
+                    "value": "3.0.3"
+                },
+                {
+                    "type": "X-Specification",
+                    "value": "openapi-3.0.3"
+                },
+                {
+                    "type": "X-Notifications",
+                    "value": "true"
+                }
+            ]
+        }
+    ]
+}
