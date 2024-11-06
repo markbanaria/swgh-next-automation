@@ -22,6 +22,7 @@ export interface API {
 }
 
 export interface APIDetails {
+    info: { title: string };
     paths: Record<string, Record<string, any>>;
     tags?: { name: string }[];
 }

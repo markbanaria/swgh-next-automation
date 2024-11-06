@@ -20,7 +20,6 @@ export async function fetchAPIList() {
 }
 
 export async function fetchAPIByName(name, version) {
-    console.log(`${API_URL}/${name}/${version}`);
     const response = await fetch(`${API_URL}/${name}/${version}`, {
         headers: {
             'Authorization': `Bearer ${API_KEY}`,

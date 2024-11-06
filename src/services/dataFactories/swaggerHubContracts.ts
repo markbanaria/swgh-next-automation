@@ -1,23 +1,46 @@
-import {  } from "../../types/swaggerHub";
-import { getApiList, extractTag, getApiDetails, getSlugAndVersion } from "../util/masterPathList";
-import Domains from "../../config/domain/config.json";
+import { getApiList, getApiDetails, getSlugAndVersion } from "../util/masterPathList";
+import { scrubList } from "../util/listMethods";
+import { extractMatch } from "../util/stringMethods";
 import Entities from "../../config/entity/config.json";
+import { APIDetails } from "@/src/types/swaggerHub";
 
-export async function generateApiMasterList() {
-    const apiMasterList: any[] = [];
-    const apiList = await getApiList();
-    const tags = Domains
-    const entities = Entities;
+export async function getswaggerHubContracts() {
 
-    const AllApiDetails = await Promise.all(apiList.map(async api => {
-        // if api name contains any of the entities
-        // const { slug, version } = getSlugAndVersion(api.name)
-        // const apiDetails = getApiDetails(slug, version)
-        // for each item in apiDetails.paths 
-        // add an entry to the apiMasterList like this
-        // apiMasterList.push({entity: entity, path: api.name, path: item key, stages: item.stages})
+    function _addAPIDetailsToListObject(apiDetails: APIDetails, key: string) {
+        const title = apiDetails["info"]["title"];
+        const entity = extractMatch(title, Entities);
+        const method = Object.keys(apiDetails.paths[key]).find(method => ["get", "post", "put", "delete"].includes(method)
+        );
+        const domain = method && apiDetails.paths[key][method].tags
+            ? apiDetails.paths[key][method].tags[0]
+            : null;
+
+        return {
+            "uid": key,
+            "entity": entity || "",
+            "domain": domain,
+            "pathName": key,
+            "description": apiDetails.paths[key].description,
+            "status": {
+                "ContractAvailable": true,
+                "ProxyDefined": false,
+                "SymphonyToProxyTestPassed": false,
+                "ProxyToLocalTestPassed": false
+            }
+        };
     }
+    
+    const apiList = await getApiList();
+    const apiPathDump = (await Promise.all(apiList.map(async api => {
+        const { slug, version } = getSlugAndVersion(api);
+        if (!slug || !version) return [];
+    
+        const apiDetails = await getApiDetails(slug, version);
+        return Object.keys(apiDetails.paths).map(key => _addAPIDetailsToListObject(apiDetails, key));
+    }))).flat();
+    
 
-    const returnVal = apiList;
-    return returnVal;
+    const swaggerHubContracts = scrubList(apiPathDump, "entity", "");
+    console.log(swaggerHubContracts.splice(0, 5));
+    return swaggerHubContracts;
 }
