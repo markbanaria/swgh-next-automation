@@ -2,6 +2,7 @@ import { getApiList, getApiDetails, getSlugAndVersion } from "../util/masterPath
 import { scrubList } from "../util/listMethods";
 import { extractMatch } from "../util/stringMethods";
 import Entities from "../../config/entity/config.json";
+import StatusTypes from "../../config/status_type/config.json";
 import { APIDetails } from "@/src/types/swaggerHub";
 
 export async function getswaggerHubContracts() {

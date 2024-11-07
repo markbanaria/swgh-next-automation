@@ -23,3 +23,8 @@ export function getSlugAndVersion(api: API): { slug: string | undefined; version
         version: versionProp?.value
     };
 }
+
+export function findUid(lbu: string, pathname: string): string {
+    
+    return "asdf";
+}
